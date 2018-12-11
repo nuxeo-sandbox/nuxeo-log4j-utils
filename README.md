@@ -11,7 +11,7 @@ Build with maven (at least 3.3)
 ```
 mvn clean install
 ```
-> Package built here: `nuxeo-onlyoffice-package/target`
+> Package built here: `nuxeo-log4j-util-package/target`
 
 > Install with `nuxeoctl mp-install <package>`
 
