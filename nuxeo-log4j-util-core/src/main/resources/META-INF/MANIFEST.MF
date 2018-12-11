@@ -1,0 +1,9 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: org.nuxeo.util.log4j
+Bundle-Version: 1.0.0
+Bundle-Name: nuxeo-log4j-util-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.nuxeo.util.log4j.nuxeo-log4j-util-core;singleton=true
+Nuxeo-Component: OSGI-INF/loglevel-operation-contrib.xml

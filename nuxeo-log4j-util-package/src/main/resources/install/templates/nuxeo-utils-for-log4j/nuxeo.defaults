@@ -1,0 +1,7 @@
+## Edit this file to customize your configuration ##
+#nuxeo-utils-for-log4j.target=
+
+# Set list of templates to include, comma separated values.
+nuxeo.template.includes=common
+
+# org.nuxeo.ecm.instance.description=Nuxeo ECM customized with Nuxeo Utils for Log4j
