@@ -1,5 +1,5 @@
 # Nuxeo Utils: Log4j
-https://qa.nuxeo.org/jenkins/buildStatus/icon?job=
+
 [![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=Sandbox/sandbox_nuxeo-log4j-utils-master)](https://qa.nuxeo.org/jenkins/view/Sandbox/job/Sandbox/job/sandbox_nuxeo-log4j-utils-master/)
 
 Operation to change log level of specified categories at runtime.  By default, changes the CONSOLE appender for logging.
