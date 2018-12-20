@@ -11,7 +11,7 @@ import org.nuxeo.log4j.Log4JHelper;
 /**
  * Enable or disable debug logging for specified log categories.
  */
-@Operation(id = LogLevel.ID, category = Constants.CAT_SERVICES, label = "Change Log Level", description = "Change (or reset) a Log Level, modified CONSOLE appender.")
+@Operation(id = LogLevel.ID, category = Constants.CAT_SERVICES, label = "Change Log Level", description = "Change (or reset) a Log Level.")
 public class LogLevel {
 
     public static final String ID = "Services.LogLevel";

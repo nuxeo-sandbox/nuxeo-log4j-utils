@@ -2,7 +2,7 @@
 
 [![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=Sandbox/sandbox_nuxeo-log4j-utils-master)](https://qa.nuxeo.org/jenkins/view/Sandbox/job/Sandbox/job/sandbox_nuxeo-log4j-utils-master/)
 
-Operation to change log level of specified categories at runtime.  By default, changes the CONSOLE appender for logging.
+Operation to change log level of specified categories at runtime.
 
 ## Build and Install
 
@@ -22,6 +22,7 @@ Name: `Services.LogLevel`
 Parameters:
 - categories: comma-separated list of log categories to manipulate
 - debug: (true) or false, enable or disable debug logging
+- level: specify the level (overrides DEBUG)
 - children: true or (false), change children of parent categories
 
 > Changes CONSOLE appender
