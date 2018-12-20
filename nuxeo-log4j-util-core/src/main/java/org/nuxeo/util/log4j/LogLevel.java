@@ -1,5 +1,7 @@
 package org.nuxeo.util.log4j;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.Level;
 import org.nuxeo.ecm.automation.core.Constants;
 import org.nuxeo.ecm.automation.core.annotations.Operation;
 import org.nuxeo.ecm.automation.core.annotations.OperationMethod;
@@ -25,8 +27,16 @@ public class LogLevel {
             "true" })
     protected boolean debug = true;
 
+    @Param(name = "level", required = false, description = "Specify level to override.")
+    protected String level = null;
+
     @OperationMethod
     public void run() {
-        Log4JHelper.setDebug(categories, debug, children, new String[] { Log4JHelper.CONSOLE_APPENDER_NAME });
+        Level lvl = this.debug ? Level.DEBUG : Level.WARN;
+        String[] cat = categories.split(",");
+        if (StringUtils.isNotBlank(level)) {
+            lvl = Level.toLevel(level);
+        }
+        Log4JHelper.setLevel(cat, lvl, children);
     }
 }
